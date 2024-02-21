@@ -1,7 +1,7 @@
 version: "1"
 services:
   application:
-    image: springJPAApp
+    image: springjpaimg
     ports:
       - "8080:9090"
     networks:
@@ -16,8 +16,8 @@ services:
     networks:
       - springboot-db-net
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=sbms
+      - MYSQL_ROOT_PASSWORD=Koushik@123
+      - MYSQL_DATABASE=koushik
     volumes:
       - /data/mysql
 networks:
